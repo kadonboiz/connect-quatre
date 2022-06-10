@@ -129,9 +129,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (currentPlayer == "Baguette") {
           squares[i].classList.add("taken");
           squares[i].classList.add("player-one");
-          currentPlayer = "Rebels";
+          currentPlayer = "Escargot";
           displayCurrentPlayer.innerHTML = currentPlayer;
-        } else if (currentPlayer == "Rebels") {
+        } else if (currentPlayer == "Escargot") {
           squares[i].classList.add("taken");
           squares[i].classList.add("player-two");
           currentPlayer = "Baguette";
