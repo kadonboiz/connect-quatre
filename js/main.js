@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const result = document.querySelector(".result");
   const displayCurrentPlayer = document.querySelector(".current-player");
   const startButton = document.querySelector(".start");
-  let currentPlayer = "The Empire";
+  let currentPlayer = "Baguette";
   const winningArrays = [
     [0, 1, 2, 3],
     [41, 40, 39, 38],
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
         squares[i + 7].classList.contains("taken") &&
         !squares[i].classList.contains("taken")
       ) {
-        if (currentPlayer == "The Empire") {
+        if (currentPlayer == "Baguette") {
           squares[i].classList.add("taken");
           squares[i].classList.add("player-one");
           currentPlayer = "Rebels";
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (currentPlayer == "Rebels") {
           squares[i].classList.add("taken");
           squares[i].classList.add("player-two");
-          currentPlayer = "The Empire";
+          currentPlayer = "Baguette";
           displayCurrentPlayer.innerHTML = currentPlayer;
         }
       }
