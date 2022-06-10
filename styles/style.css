@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(//media1.tenor.com/images/8470dab55b7d5e9383b1e8f1fe946a5d/tenor.gif?itemid=10704576);
+  color: white;
+}
+
+.result {
+  font-size: 5.2em;
+  font-family: "Righteous", cursive;
+  transition: ease-in-out 0.5s;
+}
+
+.container {
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.4em;
+}
+
+.grid {
+  width: 795px;
+  height: 670px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  padding-bottom: 18px;
+  border-radius: 5px;
+}
+
+.grid div {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.player {
+  border: 1px solid white;
+}
+
+.player-one {
+  background-color: red;
+  background-image: url(../images/empire.png);
+  background-size: cover;
+  border-radius: 50%;
+  transition: ease-in-out 0.5s;
+  box-shadow: 1px 1px 8px 6px white;
+}
+
+.player-two {
+  background-color: white;
+  background-image: url(../images/rebel.png);
+  background-size: cover;
+  border-radius: 50%;
+  transition: ease-in-out 0.5s;
+  box-shadow: 1px 2px 8px 6px white;
+}
+
+.player-message {
+  text-align: center;
+  margin-top: 4%;
+}
+
+.current-player {
+  text-align: center;
+  font-size: 3em;
+  font-family: "Righteous", cursive;
+}
+
+.start {
+  font-size: 2.8em;
+  color: white;
+  background-color: transparent;
+  font-family: "Righteous", cursive;
+  border: 2px solid white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-top: 4%;
+  transition: ease-in-out 0.5s;
+  outline: none;
+}
+.start:hover {
+  background-color: #ffffffe0;
+  color: black;
+}
+
+.hide {
+  display: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.footer {
+  background-color: #ffffffe0;
+  font-family: "Nunito", sans-serif;
+  color: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 5vh;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4vh;
+}
+
+.nav {
+  display: flex;
+}
+.link {
+  color: black;
+  padding-right: 1.5rem;
+  transition: ease 0.5s;
+}
+.link:hover {
+  color: red;
+}
+
+.fa-cat {
+  color: red;
+}
+
+@media all and (max-width: 1024px) {
+  .result {
+    font-size: 4em;
+  }
+}
+@media all and (max-width: 768px) {
+  .result {
+    font-size: 1.6em;
+  }
+  .start {
+    font-size: 1.2em;
+  }
+  .footer {
+    font-size: 0.8em;
+  }
+  .current-player {
+    font-size: 1.2em;
+  }
+  .player-title {
+    font-size: 0.8em;
+  }
+  .grid {
+    width: 284px;
+    height: 240px;
+    padding: 5px;
+  }
+
+  .grid div {
+    width: 35px;
+    height: 35px;
+    margin: 2px;
+  }
+}
